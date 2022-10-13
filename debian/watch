@@ -1,0 +1,10 @@
+version=4
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,pgpmode=none" \
+ https://registry.npmjs.org/boolbase https://registry.npmjs.org/boolbase/-/boolbase-(\d[\d\.]*)@ARCHIVE_EXT@ group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-boolbase,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*$/node-types-boolbase-1.tar.gz/" \
+ https://registry.npmjs.org/@types/boolbase https://registry.npmjs.org/@types/boolbase/-/boolbase-([\d\.]+)@ARCHIVE_EXT@ group
